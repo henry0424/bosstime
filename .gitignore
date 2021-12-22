@@ -1,0 +1,13 @@
+.vscode/
+build/
+cmake-build*
+.idea
+.vscode
+
+scripts/mcs/imcs*.deb
+scripts/acsgw/iacsgw*.deb
+
+
+include/mcs_agent/version.h
+include/acs_itrids_gateway/version.h
+include/abcs/version.h

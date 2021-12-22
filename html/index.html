@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+    <meta name="author" content="AdminKit">
+    <meta name="keywords"
+          content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+    <!--	<link rel="shortcut icon" href="img/icons/itri_logo.png" />-->
+    <title>LinewgeW Boss Time</title>
+
+    <link href="css/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: Microsoft JhengHei;">
+<div class="wrapper">
+    <!-- 選單列 START-->
+    <nav id="sidebar" class="sidebar js-sidebar">
+        <div class="sidebar-content js-simplebar">
+            <a class="sidebar-brand" href="UI.html" style="background: #2b2b2b">
+                <!--					<img src="img/icons/itri_logo.png" alt="" width="32" height="32" class="rounded-circle">-->
+                &nbsp;<span class="align-middle">Lineage W</span>
+            </a>
+
+            <ul class="sidebar-nav" style="background: #2b2b2b">
+                <li class="sidebar-header">
+                    選單
+                </li>
+
+                <!-- 選單-即時顯示 START-->
+                <li class="sidebar-item">
+                    <a class="sidebar-link" data-bs-toggle="collapse" href="#collapse01" aria-expanded="true"
+                       aria-controls="collapse01" style="background:#2b2b2b;color:#FFFFFF">
+                        <i class="align-middle" data-feather="monitor" style="color:#FFFFFF"></i> <span
+                            class="align-middle">查詢</span>
+                    </a>
+                </li>
+                <li class="sidebar-item active">
+                    <a class="sidebar-link collapse" id="collapse01" href="" style="background:#2b2b2b">
+                        <span class="align-middle">&nbsp; &nbsp; 當前目標 </span>
+                    </a>
+                </li>
+                <li class="sidebar-item active">
+                    <a class="sidebar-link collapse" id="collapse01" href="" style="background:#2b2b2b">
+                        <span class="align-middle">&nbsp; &nbsp; 資料表格 </span>
+                    </a>
+                </li>
+                <!-- 選單-即時顯示 END-->
+            </ul>
+        </div>
+        <!-- 選單-即時顯示 END-->
+    </nav>
+    <!-- 選單列 END-->
+    <main class="main">
+
+        <!-- 上標題列 END-->
+        <nav class="navbar navbar-expand" style="background: #3c3f41">
+            <!-- 縮排 START-->
+            <a class="sidebar-toggle js-sidebar-toggle">
+                <i class="hamburger align-self-center"></i>
+            </a>
+            <!-- 縮排 END-->
+            <div class="content" style="margin-top:-50px;margin-bottom:-25px;">
+                <div class="row">
+                    <div class="col-lg-1 col-md-1">
+                    </div>
+                    <!-- 右邊 START-->
+                    <div class="col-lg-5 col-md-5">
+                        <div class="row" style="text-align: right;">
+                            <div class="col-3">
+                                <span style="color: #FFFFFF">2021/01/01 00:00:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右邊 END-->
+                </div>
+            </div>
+        </nav>
+        <!-- 上標題列 END-->
+
+        <div class="content" style="background: #595b5d">
+            <div class="container-fluid">
+                <div class="card">
+                    <!-- 內文小標題 START-->
+                    <div class="card-header">
+                        <h4 style="color: #313335">
+                            <strong><i class="align-middle" data-feather="home"></i>
+                                &ensp;查詢&ensp;>&ensp;當前目標</strong>
+                        </h4>
+                    </div>
+                    <!-- 內文小標題 END-->
+                    <!-- 內文 START-->
+                    <div class="card-body" style="margin-top:-30px;">
+                        <div class="row">
+                            <!-- 篩選 START-->
+                            <div class="row align-items-center">
+                                <div class="d-grid gap-2 col-6 mx-auto mb-3">
+                                    <div class="btn-group me-2" role="group" aria-label="">
+                                        <button type="button" class="btn btn-info"
+                                                style="background:#e9ecef;color:#000000;border:1px solid #ced4da;"><i
+                                                data-feather="chevrons-left"></i></button>
+                                        <button type="button" class="btn btn-info"
+                                                style="background:#e9ecef;color:#000000;border:1px solid #ced4da;"><i
+                                                data-feather="chevron-left"></i></button>
+                                        <button type="button" class="btn btn-info"
+                                                style="background:#00abeb;color:#FFFFFF;border:1px solid #ced4da;">1
+                                        </button>
+                                        <button type="button" class="btn btn-info"
+                                                style="background:#e9ecef;color:#000000;border:1px solid #ced4da;"><i
+                                                data-feather="chevron-right"></i></button>
+                                        <button type="button" class="btn btn-info"
+                                                style="background:#e9ecef;color:#000000;border:1px solid #ced4da;"><i
+                                                data-feather="chevrons-right"></i></button>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2 col-3 mx-auto mb-3">
+                                    <div class="btn-group me-2" role="group" aria-label="">
+                                        <button type="button" class="btn btn-info" style="background:#00abeb;">重設
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2 col-3 mx-auto mb-3">
+                                    <div class="btn-group me-2" role="group" aria-label="">
+                                        <button type="button" class="btn btn-info" style="background:#00abeb;">匯出CSV檔
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="">顯示</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input"
+                                               aria-describedby="inputGroup-sizing-default">
+                                        <span class="input-group-text" id="">小時</span>
+                                        <button class="btn btn-info" type="button" style="background:#00abeb;">SHOW
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="">更新頻率</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input"
+                                               aria-describedby="inputGroup-sizing-default">
+                                        <span class="input-group-text" id="">秒</span>
+                                        <button class="btn btn-info" type="button" style="background:#00abeb;">SET
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="input-group mb-3">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="ShowActiveOnly"
+                                                   value="option1">
+                                            <label class="form-check-label" for="ShowActiveOnly">Show Active
+                                                Only</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="ShowCompletedOnly"
+                                                   value="option2">
+                                            <label class="form-check-label" for="ShowCompletedOnly">Show Completed
+                                                Only</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 篩選 END-->
+                                <!-- 表格 START-->
+                                <table class="table table-bordered table-hover"
+                                       style="background: #f5f7fb;text-align:center;font-size: small;overflow-x:auto;display:block;white-space:nowrap;">
+                                    <thead style="background: #3c3f41;color: #f5f7fb">
+                                    <tr>
+                                        <th scope="col">NO.</th>
+                                        <th scope="col">接收時間</th>
+                                        <th scope="col">結束時間</th>
+                                        <th scope="col">MR ID</th>
+                                        <th scope="col">載具ID</th>
+                                        <th scope="col">搬運順序</th>
+                                        <th scope="col">搬運狀態</th>
+                                        <th scope="col">從</th>
+                                        <th scope="col">到</th>
+                                        <th scope="col">操作者</th>
+                                        <th scope="col">命令ID</th>
+                                        <th scope="col">搬運時間</th>
+                                        <th scope="col">Hold Reason</th>
+                                        <th scope="col">Comment</th>
+                                        <th scope="col">Actions</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>2021/XX/XX 00:00:00</td>
+                                        <td>2021/XX/XX 00:00:00</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>3</td>
+                                        <td>REJECTRD</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>2021/XX/XX 00:00:00</td>
+                                        <td>2021/XX/XX 00:00:00</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>3</td>
+                                        <td>REJECTRD</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>2021/XX/XX 00:00:00</td>
+                                        <td>2021/XX/XX 00:00:00</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>3</td>
+                                        <td>REJECTRD</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>2021/XX/XX 00:00:00</td>
+                                        <td>2021/XX/XX 00:00:00</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>3</td>
+                                        <td>REJECTRD</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>2021/XX/XX 00:00:00</td>
+                                        <td>2021/XX/XX 00:00:00</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>3</td>
+                                        <td>REJECTRD</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>2021/XX/XX 00:00:00</td>
+                                        <td>2021/XX/XX 00:00:00</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>3</td>
+                                        <td>REJECTRD</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>2021/XX/XX 00:00:00</td>
+                                        <td>2021/XX/XX 00:00:00</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>3</td>
+                                        <td>REJECTRD</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>2021/XX/XX 00:00:00</td>
+                                        <td>2021/XX/XX 00:00:00</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>3</td>
+                                        <td>REJECTRD</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                        <td>XXXXXXXX</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <!-- 表格 END-->
+                            </div>
+                        </div>
+                        <!-- 內文 END-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer" style="background: #3c3f41">
+            <div class="container-fluid">
+                <div class="row text-muted">
+                    <div class="col-6 text-start">
+                        <p class="mb-0">
+                            <a class="text-muted" href="" target="_blank"><strong>Henry</strong></a> &copy;2021
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
